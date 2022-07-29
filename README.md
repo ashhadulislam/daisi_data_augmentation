@@ -4,6 +4,8 @@ Quite often we are handed datasets that have imbalance. Majority of the data bel
 
 One of the popular ones is the smote-variant library which has around 85 algorithms that can be utilised to augment data. We expose this library through daisi.
 
+Note you need to have python 3.8 or greater.
+
 ## Supported functions
 
 
