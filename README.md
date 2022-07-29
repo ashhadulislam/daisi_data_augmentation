@@ -1,18 +1,8 @@
 # A daisi library for augmenting imbalanced data
 
-Quite often we are handed datasets that have imbalance.
+Quite often we are handed datasets that have imbalance. Majority of the data belongs to a specific category while only few belong to the other. Any classifier trained on this kind of data would nurture a bias towards the majority class. It would be great to artificially create data points similar to the minority data, to add a semblance of balance to the dataset. There are many libraries that achieve exactly that.
 
-Majority of the data belongs to a specific category while only few belong to the other.
-
-Any classifier trained on this kind of data would nurture a bias towards the majority class.
-
-It would be great to artificially create data points similar to the minority data, to add a semblance of balance to the dataset.
-
-There are many libraries that achieve exactly that.
-
-One of the popular ones is the smote-variant library which has around 85 algorithms that can be utilised to augment data.
-
-We expose this library through daisi.
+One of the popular ones is the smote-variant library which has around 85 algorithms that can be utilised to augment data. We expose this library through daisi.
 
 ## Supported functions
 
