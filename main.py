@@ -7,6 +7,7 @@ import numpy as np
 
 def get_all_oversamplers():
 	'''
+
 	gives a list of names of all oversamplers
 	present in this library
 	'''
@@ -21,6 +22,7 @@ def get_all_oversamplers():
 
 def get_oversampler_object_by_name(ovsampler_name):
 	'''
+	
 	returns the oversampler object 
 	according to the name of the oversampler passed
 	'''
@@ -82,7 +84,7 @@ def test():
 	test function
 	not required
 	'''
-	
+
 	df=pd.read_csv("iris_modified.csv")
 	X=df.iloc[:,:-1].values
 	y=df.iloc[:,-1].values
