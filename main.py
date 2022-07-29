@@ -10,6 +10,7 @@ def get_all_oversamplers():
 	gives a list of names of all oversamplers
 	present in this library
 	'''
+
 	list_osamplers_name=[]
 	list_oversamplers=sv.get_all_oversamplers()
 	for l in list_oversamplers:		
@@ -23,6 +24,7 @@ def get_oversampler_object_by_name(ovsampler_name):
 	returns the oversampler object 
 	according to the name of the oversampler passed
 	'''
+
 	if ovsampler_name not in lib.dic_oversamplers:
 		print("Oversampler name incorrect/ not present among the following")
 		print(list(lib.dic_oversamplers.keys()))
@@ -35,6 +37,7 @@ def get_oversampler_parameters(ovsampler_object):
 	all the parameters specific to the oversampler passed 
 	as parameter
 	'''
+
 	return ovsampler_object.get_params()
 
 def set_oversampler_parameter(ovsampler_object,param_dic):
@@ -46,6 +49,7 @@ def set_oversampler_parameter(ovsampler_object,param_dic):
 	no modification, returns the original oversampler object
 	On success returns the oversaampler object with modified params
 	'''
+
 	for k,v in param_dic.items():
 		
 		if k not in ovsampler_object.get_params():
@@ -66,6 +70,7 @@ def oversample(X,y,ovsampler_object):
 	performs oversampling by augmentation
 	returns the oversampled X and y
 	'''
+
 	X_ov,y_ov=ovsampler_object.sample(X,y)
 	return X_ov,y_ov
 
@@ -77,6 +82,7 @@ def test():
 	test function
 	not required
 	'''
+	
 	df=pd.read_csv("iris_modified.csv")
 	X=df.iloc[:,:-1].values
 	y=df.iloc[:,-1].values
