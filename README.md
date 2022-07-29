@@ -11,8 +11,8 @@ One of the popular ones is the smote-variant library which has around 85 algorit
 get_all_oversamplers()
 ```
 
-This function returns a list of names of all oversampling algorithms present in the library.
-
+This function returns a list of names of all oversampling algorithms present in the library (See bottom for the list).
+ 
 You can choose any of the names and pass that to the below function to get the oversampler object.
 
 ```
@@ -85,6 +85,11 @@ X_new,y_new=over_samplers.oversample(X,y,os)
 print("after oversampling, shape = ",X_new.shape,y_new.shape)
 
 
+```
+
+List of all oversamplers:
+```
+['NoSMOTE', 'SMOTE', 'SMOTE_TomekLinks', 'SMOTE_ENN', 'Borderline_SMOTE1', 'Borderline_SMOTE2', 'ADASYN', 'AHC', 'LLE_SMOTE', 'distance_SMOTE', 'SMMO', 'polynom_fit_SMOTE', 'Stefanowski', 'Safe_Level_SMOTE', 'MSMOTE', 'DE_oversampling', 'SMOBD', 'SUNDO', 'MSYN', 'SVM_balance', 'TRIM_SMOTE', 'SMOTE_RSB', 'ProWSyn', 'SL_graph_SMOTE', 'NRSBoundary_SMOTE', 'LVQ_SMOTE', 'SOI_CJ', 'ROSE', 'SMOTE_OUT', 'SMOTE_Cosine', 'Selected_SMOTE', 'LN_SMOTE', 'MWMOTE', 'PDFOS', 'IPADE_ID', 'RWO_sampling', 'NEATER', 'DEAGO', 'Gazzah', 'MCT', 'ADG', 'SMOTE_IPF', 'KernelADASYN', 'MOT2LD', 'V_SYNTH', 'OUPS', 'SMOTE_D', 'SMOTE_PSO', 'CURE_SMOTE', 'SOMO', 'CE_SMOTE', 'ISOMAP_Hybrid', 'Edge_Det_SMOTE', 'CBSO', 'DBSMOTE', 'ASMOBD', 'Assembled_SMOTE', 'SDSMOTE', 'DSMOTE', 'G_SMOTE', 'NT_SMOTE', 'Lee', 'SPY', 'SMOTE_PSOBAT', 'MDO', 'Random_SMOTE', 'ISMOTE', 'VIS_RST', 'GASMOTE', 'A_SUWO', 'SMOTE_FRST_2T', 'AND_SMOTE', 'NRAS', 'AMSCO', 'SSO', 'DSRBF', 'NDO_sampling', 'Gaussian_SMOTE', 'kmeans_SMOTE', 'Supervised_SMOTE', 'SN_SMOTE', 'CCR', 'ANS', 'cluster_SMOTE', 'E_SMOTE', 'ADOMS', 'SYMPROD']
 ```
 
 
