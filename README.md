@@ -6,6 +6,12 @@ One of the popular ones is the smote-variant library which has around 85 algorit
 
 Note you need to have python 3.8 or greater.
 
+Install pydaisi
+
+```
+pip install --upgrade pydaisi
+```
+
 ## Supported functions
 
 
