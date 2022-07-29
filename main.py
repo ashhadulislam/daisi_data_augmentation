@@ -7,7 +7,7 @@ import numpy as np
 
 def get_all_oversamplers():
 	'''
-
+	this
 	gives a list of names of all oversamplers
 	present in this library
 	'''
@@ -22,7 +22,7 @@ def get_all_oversamplers():
 
 def get_oversampler_object_by_name(ovsampler_name):
 	'''
-	
+	this
 	returns the oversampler object 
 	according to the name of the oversampler passed
 	'''
@@ -35,6 +35,7 @@ def get_oversampler_object_by_name(ovsampler_name):
 
 def get_oversampler_parameters(ovsampler_object):
 	'''
+	this
 	returns a dictionary containing
 	all the parameters specific to the oversampler passed 
 	as parameter
@@ -44,6 +45,7 @@ def get_oversampler_parameters(ovsampler_object):
 
 def set_oversampler_parameter(ovsampler_object,param_dic):
 	'''
+	this
 	used to modify the behaviour of an oversampler
 	input arguments: the oversampler object and the dictionary of parameters
 	central to that object
@@ -69,6 +71,7 @@ def set_oversampler_parameter(ovsampler_object,param_dic):
 
 def oversample(X,y,ovsampler_object):
 	'''
+	this
 	performs oversampling by augmentation
 	returns the oversampled X and y
 	'''
@@ -81,6 +84,7 @@ def oversample(X,y,ovsampler_object):
 
 def test():
 	'''
+	this
 	test function
 	not required
 	'''
