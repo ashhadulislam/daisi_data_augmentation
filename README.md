@@ -65,9 +65,18 @@ y=df.iloc[:,-1].values
 name="Gaussian_SMOTE"
 os=over_samplers.get_oversampler_object_by_name(name)
 print("before oversampling, shape = ",X.shape,y.shape)
-X_new,y_new=over_samplers.over_samplers.oversample(X,y,os)
+result=over_samplers.oversample(X,y,os)
+X_new,y_new=result.value
 print("after oversampling, shape = ",X_new.shape,y_new.shape)
 
+```
+
+Output:
+```
+[21:57:24] INFO     Calling https://app.daisi.io/pebble-api/daisies/connect?name=ashhadulislam/OverSampling        pydaisi.py:378
+[21:57:25] INFO     Found existing Daisi: 0df65e1f-f474-45d7-acba-6ddc304eb77d                                     pydaisi.py:391
+before oversampling, shape =  (150, 4) (150,)
+after oversampling, shape =  (200, 4) (200,)
 ```
 
 ### Example with modified parameters
@@ -84,17 +93,24 @@ y=df.iloc[:,-1].values
 # choose the oversampler	
 name="MWMOTE"
 os=over_samplers.get_oversampler_object_by_name(name)
-dict_params=over_samplers.get_oversampler_parameters(os)
+res=over_samplers.get_oversampler_parameters(os)
+dict_params=res.value
 # change values of params
 dict_params["proportion"]=2
 os=over_samplers.set_oversampler_parameter(os,dict_params)
 print("before oversampling, shape = ",X.shape,y.shape)
-X_new,y_new=over_samplers.oversample(X,y,os)
+result=over_samplers.oversample(X,y,os)
+X_new,y_new=result.value
 print("after oversampling, shape = ",X_new.shape,y_new.shape)
-
-
 ```
 
+Ouptu:
+```
+[21:58:49] INFO     Calling https://app.daisi.io/pebble-api/daisies/connect?name=ashhadulislam/OverSampling        pydaisi.py:378
+[21:58:50] INFO     Found existing Daisi: 0df65e1f-f474-45d7-acba-6ddc304eb77d                                     pydaisi.py:391
+before oversampling, shape =  (150, 4) (150,)
+after oversampling, shape =  (250, 4) (250,)
+```
 List of all oversamplers:
 
 Code to find all oversamplers supported in this library
