@@ -113,7 +113,7 @@ List of all oversamplers:
 Code to find all oversamplers supported in this library
 ```
 import pydaisi as pyd
-pyd.get_all_oversamplers()
+print(pyd.get_all_oversamplers().value)
 ```
 
 Output:
