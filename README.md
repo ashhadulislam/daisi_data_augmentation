@@ -89,10 +89,13 @@ print("after oversampling, shape = ",X_new.shape,y_new.shape)
 
 List of all oversamplers:
 
+Code to find all oversamplers supported in this library
 ```
 import pydaisi as pyd
 pyd.get_all_oversamplers()
 ```
+
+Output:
 
 ```
 ['NoSMOTE', 'SMOTE', 'SMOTE_TomekLinks', 'SMOTE_ENN', 'Borderline_SMOTE1', 'Borderline_SMOTE2', 'ADASYN', 'AHC', 'LLE_SMOTE', 
