@@ -88,6 +88,12 @@ print("after oversampling, shape = ",X_new.shape,y_new.shape)
 ```
 
 List of all oversamplers:
+
+```
+import pydaisi as pyd
+pyd.get_all_oversamplers()
+```
+
 ```
 ['NoSMOTE', 'SMOTE', 'SMOTE_TomekLinks', 'SMOTE_ENN', 'Borderline_SMOTE1', 'Borderline_SMOTE2', 'ADASYN', 'AHC', 'LLE_SMOTE', 
 'distance_SMOTE', 'SMMO', 'polynom_fit_SMOTE', 'Stefanowski', 'Safe_Level_SMOTE', 'MSMOTE', 'DE_oversampling', 'SMOBD', 'SUNDO', 'MSYN', 
